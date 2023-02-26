@@ -1,0 +1,16 @@
+{% extends 'header.html' %}
+{% load static %}
+{% block content %}
+    <h1>New Product Adding </h1>
+    <form method="POST" enctype="multipart/form-data" class="form form-control text-primary">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <p class="text-center">
+            <button type="button" class="btn " onclick="history.back()"><img src="{% static 'images/icon/back.png' %} "height="30" width="30">
+                 <i class=""></i> Back
+            </button>
+            <button type="submit" class="btn btn-lg "><img src="{% static 'images/icon/save.png' %} "height="30" width="30">
+                 <i class=""></i> Save</button>
+        </p>
+    </form>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% load static %}
+<div class="row">
+    <div class="col-sm-3">
+        <ul class="list-group ">
+            <ul class="list-group list-group-flush">
+                <strong>
+                    <li class="list-group-item "><i class="bi bi-list-task"></i>  หมวดหมู่</a> </li>
+
+                    <li class="list-group-item"><a href="{% url 'computer' %}"
+                                                   class=" list-group-item-light"><img src="{% static 'images/icon/ux.png' %} "height="30" width="30"></i> ภาษาคอมพิวเตอร์</a> </li>
+                    <li class="list-group-item"><a href="{% url 'religion' %}"
+                                                   class=" list-group-item-light "><img src="{% static 'images/icon/religion.png' %} "height="30" width="30"> ศาสนา</a> </li>
+                    <li class="list-group-item"><a href="{% url 'anime' %}"
+                                                   class=" list-group-item-light "><img src="{% static 'images/icon/anime.png' %} "height="30" width="30"> การ์ตูน</a> </li>
+                    <li class="list-group-item"><a href="{% url 'seience' %}"
+                                                   class=" list-group-item-light "><img src="{% static 'images/icon/seience.png' %} "height="30" width="30"> วิทยาศาสตร์</a> </li>   </strong>
+
+            </ul>
+        </ul>
+    </div>
+</div>
+</div>
