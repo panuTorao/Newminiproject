@@ -1,4 +1,16 @@
 {% extends 'header.html' %}
 {% block content %}
-    <h1>this apply</h1>
+    <div class="text-center">
+        <form action="/action_page.php">
+            <label for="fname">User name:</label><br>
+            <input type="text" id="fname" name="fname" value=""><br>
+            <label for="fname">Email :</label><br>
+            <input type="text" id="fname" name="fname" value=""><br>
+            <label for="fname">password:</label><br>
+            <input type="text" id="fname" name="fname" value=""><br>
+            <label for="lname">Confirm password :</label><br>
+            <input type="text" id="lname" name="lname" value=""><br><br>
+            <button type="submit">สมัคร</button>
+        </form>
+    </div>
 {% endblock %}

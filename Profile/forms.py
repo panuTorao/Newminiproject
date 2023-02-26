@@ -44,11 +44,12 @@ class ProductsForm(forms.ModelForm):
 
     def updateForm(self):
         self.fields['pid'].widget.attrs['readonly'] = True
-        self.fields['pid'].label = 'รหัสสินค้า [ไม่อนุญาตให้แก้ไขได้]'
+        self.fields['pid'].label = 'รหัสสินค้า [ไม่สามารถแก้ไขได้]'
 
     def deleteForm(self):
         self.fields['pid'].widget.attrs['readonly'] = True
         self.fields['name'].widget.attrs['readonly'] = True
+        self.fields['detail'].widget.attrs['readonly'] = True
         self.fields['category'].widget.attrs['readonly'] = True
         self.fields['price'].widget.attrs['readonly'] = True
         self.fields['net'].widget.attrs['readonly'] = True

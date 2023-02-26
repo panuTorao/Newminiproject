@@ -1,5 +1,6 @@
 {% extends 'header.html' %}
 {% block content %}
+{% load static %}
     <h1>this login</h1>
     <div class="text-center">
         <html>
@@ -9,15 +10,18 @@
 
         <form action="/action_page.php">
             <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" value="John"><br>
+            <input type="text" id="fname" name="fname" value=""><br>
             <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" value="Doe"><br><br>
-            <input type="submit" value="Submit">
+            <input type="text" id="lname" name="lname" value=""><br><br>
+            <li class="list-group-item"><a href="{% url 'home' %}"
+                                                           class=" list-group-item-light ">
+            <img src="{% static 'images/icon/literature.png' %} "height="30" width="30"></i>เข้าสู่ระบบ</a> </li>
         </form>
 
-        <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+        <p></p>
 
         </body>
         </html>
     </div>
+
 {% endblock %}
